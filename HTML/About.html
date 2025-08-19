@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style>html{display: none} body{background-color: rgb(11,3,27)}</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="A portfolio website for Finley Crowther"/>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://localhost:35729/livereload.js"></script>
+    <script src="../Menu.js"></script>
+    <script src="../arrows.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/FC.png">
+</head>
+<body class="background">
+<div class="menu-box" id="menu-box">
+    <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Portfolio.html">PORTFOLIO</a></li>
+        <li><a href="Socials.html">SOCIALS</a></li>
+        <li><a href="Resume.html">RESUME</a></li>
+        <li><a href="Hire.html">HIRE</a></li>
+        <li><a href="help.html">HELP</a></li>
+        <li><a href="testing.html">TESTING</a></li>
+    </ul>
+</div>
+<div class="scroll-container">
+    <!-- <button onclick="invertColors();" style="position: fixed; top: 33px; left: 66px;">C</button> -->
+        <div class="iconContainer">
+            <a href="../index.html"><img src="images/FC.png" width="44" height="46" class="icon" alt="FC icon"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">HOME</a></li> <!--Remove current tab from list to have an easy way back-->
+                <li><a class="disabled">ABOUT</a></li>
+                <li><a href="Socials.html">SOCIALS</a></li>
+                <li><a href="Portfolio.html">PORTFOLIO</a></li>
+                <li><a href="Resume.html">RESUME</a></li>
+            </ul>
+        </nav>
+        <div id="menu-button" onclick="openMenu()">
+            <svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39"
+                 fill="none">
+                <path id="hbm" d="M4.875 19.5H34.125M4.875 9.75H34.125M4.875 29.25H34.125" stroke="white" stroke-width="3"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    <img src="../images/ABOUT_Bakground_art.png" alt="Background Art" class="background-about">
+    <div class="gradient-bar"></div>
+    <h1 class="about-me-title">ABOUT ME</h1>
+    <h2 class="abt-h2 brief">BRIEF</h2>
+    <p class="abt-p about-brief"> Hi, my name is Finley Crowther. I am an upcoming full stack developer with a passion for complex logic heavy tasks and enjoy a challenge. I have been passionately coding since i was in my early teenaged years and have been all around technology since i was very young and i have a burning passion for it all!</p>
+    <div class="left-arrow-2 left-arrow abt-arr" onclick="scrollToBottom()">
+        <svg class="rar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M34.0416 21.5H8.95825M8.95825 21.5L21.4999 34.0416M8.95825 21.5L21.4999 8.95831"
+                  stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="right-arrow-2 right-arrow abt-arr" onclick="scrollDown()">
+        <svg class="lar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path d="M8.95841 21.5H34.0417M34.0417 21.5L21.5001 34.0416M34.0417 21.5L21.5001 8.95831"
+                  stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <h2 class="abt-h2 my-story">MY STORY</h2>
+    <p class="abt-p my-story-1"> Now that you have a brief picture of me, let me give some more breadth to that. I have had a passion for technology and problem solving since i was a young child, at the age of six i would sit under our outside stairs dismantling pieces of technology that i had found on the side of the road such as old TV’s or radios. However it was not until later on in my early teenage years that i started experimenting with the software side of computers.
+
+        As i lived in Victoria (Aus) during the time covid hit i was under harsh lockdowns and found myself with alot of time on my hands to start experimenting with coding and other sorts of technological fields, during this time i had online school and was only allowed out of the house for a brief period each day so i ended up playing a lot of video games with my friends online as this was all we could really do. The main one of these was a *small* *indie* game called Minecraft.
+
+        As time progressed and i started to run out of things to do in the base game, i looked into modding and then started to create my own mods for the game. This is what struck my passion for coding, if you didn’t know the main version for desktop of Minecraft is written in java hence my my proficiency being in java as i have been using it for the longest. After school resumed in person, i took my new found passion for coding and applied it to the algorithmic and programming course.</p>
+    <p class="abt-p my-story-2"> Already knowing how to code put me miles ahead of the rest of the class and so i decided to advance into the VCE course of Applied computing and later Software development. During this time my skills with development flourished as i took on increasingly more difficult projects and challenges, one of the best i made during this time was Wattbroker, an energy commodity prediction and trading platform intended to help individual traders break into the wholesale market and help them create community batteries and overall improve the local energy grids all across Australia.
+
+        I undertook this project with Anthony Crowther as the Client who has a degree in civil engineering and a background in the utilities sector, he undertook the most of the business aspects of the project while i was doing all the technical aspects. I ended up submitting this project as my SAT in the 3&4 Software development course. During this project i learnt many valuable skills with setting-up and managing business aspects and how to create detailed prediction algorithms and i undertook this algorithm in CUDA of all languages so i also learnt how to write GPU based code, however, i am still learning as it is a vast field and has much to understand before i am an expert. If you want to learn more about this project i have a page on my portfolio [finleycrowther.au/portfolio/wattbroker/](http://finleycrowther.au/portfolio/wattbroker/about) or [finleycrowther.ct.ws/portfolio/wattbroker](http://finleycrowther.ct.ws/portfolio/wattbroker). As i finished the advanced software development course i came out with a raw 44 as my study score.</p>
+</div>
+</body>
+</html>

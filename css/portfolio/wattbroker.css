@@ -1,0 +1,70 @@
+.wb-portfolio-image {
+    position: absolute;
+    bottom: 3.75%;
+    left: 3.75%;
+}
+
+.wb-heading {
+    position: absolute;
+    top: 5%;
+    left: 3.75%;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: calc(65vw / 6.4);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1rem;
+}
+
+.background { background-color: rgb(10, 3, 25) }
+
+
+.overlay-background {
+    background: linear-gradient(90deg, #EB9A5933 0%, #FF7CFF33 50%, #4FD0D033 100%);
+}
+
+.wb-links {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.wb-links li {
+    margin-top: 1.06rem;
+}
+
+.wb-links a {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16rem;
+    text-decoration: none;
+    transition: transform 0.5s ease; /* Apply transition on transform */
+    transform: translateY(0); /* Set initial transform state */
+}
+
+.wb-links a:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
+
+.wb-text-background {
+    position: absolute;
+    top: 2.75rem;
+    left: -2.65rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.after-wb-links {
+    visibility: hidden;
+}

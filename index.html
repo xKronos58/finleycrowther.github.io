@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">8=
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="A portfolio website for Finley Crowther"/>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://localhost:35729/livereload.js"></script>
+    <script src="Main.js"></script>
+    <script src="Menu.js"></script>
+    <script src="arrows.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/FC.png">
+</head>
+<body class="background">
+  <div class="menu-box" id="menu-box">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="HTML/About.html">ABOUT</a></li>
+      <li><a href="HTML/Portfolio.html">PORTFOLIO</a></li>
+      <li><a href="HTML/Socials.html">SOCIALS</a></li>
+      <li><a href="HTML/Resume.html">RESUME</a></li>
+      <li><a href="HTML/Hire.html">HIRE</a></li>
+      <li><a href="HTML/help.html">HELP</a></li>
+      <li><a href="HTML/testing.html">TESTING</a></li>
+    </ul>
+  </div>
+<div class="scroll-container">
+  <!-- <button onclick="invertColors();" style="position: fixed; top: 33px; left: 66px;">C</button> -->
+    <div class="page-1">
+        <div class="iconContainer">
+            <img src="images/FC.png" width="44" height="46" class="icon" alt="FC icon">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="HTML/About.html">ABOUT</a></li>
+                <li><a href="HTML/Socials.html">SOCIALS</a></li>
+                <li><a href="HTML/Portfolio.html">PORTFOLIO</a></li>
+                <li><a href="HTML/Resume.html">RESUME</a></li>
+            </ul>
+        </nav>
+        <div id="menu-button" onclick="openMenu()">
+        <svg class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39"
+             fill="none">
+            <path id="hbm" d="M4.875 19.5H34.125M4.875 9.75H34.125M4.875 29.25H34.125" stroke="white" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </div>
+        <img class="BackgroundArt" src="images/BackgroundArt.png" width="1728px" height="1916px">
+        <img class="text-background-1" src="images/text-background-1.png">
+        <div class="gradient-bar" width="102rem" width="4.0625rem"></div>
+        <h1 class="l-name">CROWTHER</h1>
+        <h2 class="f-name">FINLEY</h2>
+        <p class="about-text">
+            I am a full stack software developer and designer. I specialise in Java and C++ with CUDA
+        </p>
+        <div class="left-arrow-1 left-arrow" onclick="scrollToBottom()">
+            <svg class="rar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                <path d="M34.0416 21.5H8.95825M8.95825 21.5L21.4999 34.0416M8.95825 21.5L21.4999 8.95831"
+                      stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="right-arrow-1 right-arrow" onclick="scrollDown()">
+            <svg class="lar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                <path d="M8.95841 21.5H34.0417M34.0417 21.5L21.5001 34.0416M34.0417 21.5L21.5001 8.95831"
+                      stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+    <div class="page-2">
+        <img class="text-background-2" src="images/text-background-2.png">
+        <h2 class="history">MY HISTORY</h2>
+        <p class="history-content">
+
+            I started coding during the COVID-19 pandemic lockdowns. I started from my deep interest in Minecraft, as i
+            found myself with a lot of free time, i made my own modifications to the game.
+            As i started to delve deeper into coding i started with some basic websites and eventually found myself
+            learning GPU code and creating energy market prediction algorithms.
+
+        </p>
+        <img class="text-background-3" src="images/text-background-3.png">
+        <div class="left-arrow-2 left-arrow" onclick="scrollUp()">
+            <svg class="rar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                <path d="M34.0416 21.5H8.95825M8.95825 21.5L21.4999 34.0416M8.95825 21.5L21.4999 8.95831"
+                      stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="right-arrow-2 right-arrow" onclick="scrollDown()">
+            <svg class="lar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                <path d="M8.95841 21.5H34.0417M34.0417 21.5L21.5001 34.0416M34.0417 21.5L21.5001 8.95831"
+                      stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <p class="about-text-2">
+            During 2023 i went on an exchange to Finland where i gained valuable knowledge about being independent.
+            While i was there i was studying at a local school where i was also able to take up my own independent
+            software study where i drastically furthered my skill sets.
+        </p>
+    </div>
+    <div class="page-3">
+        <h2 class="project-title">WATTBROKER</h2>
+        <div class="project-container">
+            <p class="project-paragraph-1">WattBroker is a fully featured energy commodity trading platform developed
+                using Java and CUDA</p>
+            <p class="project-paragraph-2">I built it entirely from the ground up, driven by a personal vision to
+                create a system for trading energy </p>
+            <p class="project-paragraph-3">Over the course of 2024, I overcame numerous technical challenges and
+                roadblocks to bring the platform to life.</p>
+        </div>
+        <img class="wb-image" src="images/wb.png" alt="Screenshot of the wattbroker application">
+        <!-- <img class="text-background-4" src="../images/text-background-4.png"/> -->
+        <div class="left-arrow-1 arr3 left-arrow" onclick="scrollUp()">
+            <svg class="rar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                <path d="M34.0416 21.5H8.95825M8.95825 21.5L21.4999 34.0416M8.95825 21.5L21.4999 8.95831"
+                      stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="right-arrow-1 arr3 right-arrow" onclick="scrollDown()">
+            <svg class="lar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                <path d="M8.95841 21.5H34.0417M34.0417 21.5L21.5001 34.0416M34.0417 21.5L21.5001 8.95831"
+                      stroke="#D6D6D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+    <div class="page-4">
+        <img class="p4-art" src="images/p4-art.png"/>
+        <h2 class="why-choose">Why Choose Me</h2>
+        <div class="why-choose-content-paragraphs">
+            <div class="wcc-group-1">
+                <h3 class="title-one title-light">TITLE ONE</h3>
+                <p class="paragraph-one paragraph-light">Blabble on about random junk for a while to fill up space i am not sure
+                    what i am yapping about. This is just so that the site looks full at this point in time.</p>
+            </div>
+            <div class="wcc-group-2">
+                <h3 class="title-two title-light">TITLE TWO</h3>
+                <p class="paragraph-two paragraph-light">Blabble on about random junk for a while to fill up space i am not sure
+                    what i am yapping about. This is just so that the site looks full at this point in time.</p>
+            </div>
+            <div class="wcc-group-3">
+                <h3 class="title-three title-light">TITLE THREE</h3>
+                <p id="light-pg" class="paragraph-three paragraph-light">Blabble on about random junk for a while to fill up space i am not sure
+                    what i am yapping about. This is just so that the site looks full at this point in time.</p>
+            </div>
+        </div>
+        <div class="left-arrow-1 arr4 left-arrow" onclick="scrollUp()">
+            <svg class="rar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                <path d="M34.0416 21.5H8.95825M8.95825 21.5L21.4999 34.0416M8.95825 21.5L21.4999 8.95831"
+                  stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="right-arrow-1 arr4 right-arrow" onclick="scrollDown()">
+            <svg class="lar" xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                <path d="M8.95841 21.5H34.0417M34.0417 21.5L21.5001 34.0416M34.0417 21.5L21.5001 8.95831"
+                      stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+    <div class="page-5">
+    <img src="images/BackgroundArt-2.png" class="background-image-2" alt="Background image art for the get in touch page"/>
+    <div class="gb-2 gradient-bar" width="102rem" width="4.0625rem"></div>
+    <h2 class="get-in-touch-text">GET IN TOUCH</h2>
+    <div class="footer"></div>
+    </div>
+</div>
+</body>
+<script>
+
+</script>
+</html>

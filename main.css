@@ -1,0 +1,972 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+    display: block;
+}
+
+* {
+    transition: transform 0.5s ease;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar { display: none; }
+
+.inter-semiBold {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+
+body {
+    overflow-x: hidden;
+    background-color: #080213;
+}
+
+.background {
+    background-color: #080213;
+}
+
+.icon {
+    display: flex;
+    position: fixed;
+    top: 33px;
+    left: 3.75%;
+    z-index: 100;
+    transition: transform 0.5s ease;
+}
+
+.icon-container { 
+    transition: transform 0.5s ease;
+}
+
+nav { 
+    display: flex;
+    justify-content: flex-end;
+    position: fixed; /* Use absolute positioning */
+    top: 33px; /* 33px from the top */
+    right: 7.75%; /* 152px from the right */
+    width: auto; /* Ensure width adapts to content */
+    margin: 0; /* Remove any default margin */
+    z-index: 100;
+}
+
+nav a {
+    font-family: Inter;
+    font-size: 32px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    display: inline-block; /* Ensure the element can be transformed */
+    transition: transform 0.5s ease; /* Apply transition on transform */
+    transform: translateY(0); /* Set initial transform state */
+}
+
+nav li {
+    position: relative;
+}
+
+nav a:hover:not(.disabled) {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 82px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Underline effect with animation */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: white;
+    bottom: -4px; /* Position the underline just below the text */
+    left: 0;
+    transform: scaleX(0); /* Initially, the underline is hidden */
+    transform-origin: right; /* Start the animation from the right */
+    transition: transform 0.3s ease; /* Animation duration and easing */
+    opacity: 0; /* Initially invisible */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+}
+
+        /* Hover effect */
+nav a:hover::after {
+    transform: scaleX(1); /* Expand the underline to full width */
+    transform-origin: left; /* Animate from left to right */
+    opacity: 1; /* Fade in the underline */
+}
+
+.hamburger-menu { 
+    position: fixed;
+    right: 3.75%;
+    top: 31px;
+    z-index: 100;
+    transition: transform 0.5s ease;
+}
+.BackgroundArt {
+    display: block; /* Treat the image as a block element */
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Allows for controlled positioning */
+    top: 136px; /* Keeps the image offset from the top */
+    width: 100%; /* Ensures it stretches across the width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 2100px; /* Optional: Limit height relative to viewport */
+    object-fit: cover; /* Ensures the image fills the container while cropping sides */
+    overflow-x: hidden; /* Hides the edges that exceed the container */
+}
+
+.text-background-1 {
+    width: 44.125rem;
+    height: 69.5625rem;
+    flex-shrink: 0;
+    position:absolute;
+    right: -2.1rem;
+    top: 19rem;
+}
+
+.gradient-bar {
+    width: 92.5%;
+    height: 4.0625rem;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #EB9A59 0%, #FF7CFF 50%, #4FD0D0 100%);
+    position: absolute; /* Position relative to the parent container */
+    top: 78%; /* 62.8rem from the top of the parent container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to ensure it's centered */
+}
+
+.l-name {
+    color: #FFF;
+    font-family: Inter;
+    font-size: calc(65vw / 6.4);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1rem;
+    position: absolute;
+    bottom: 10%;
+    left:3.75%;
+    height: 216px;
+    vertical-align: bottom;
+}
+
+.f-name {
+    color: #FFF;
+    font-family: Inter;
+    font-size: calc(40vw / 6.4);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8125rem;
+
+    padding-bottom: 2rem;
+
+    position: absolute;
+    bottom: 27%;
+    left: 3.75%;
+}
+
+.about-text {
+    color: var(--Light_White, #D6D6D6);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 30.8125rem;
+
+    position:absolute;
+    top:31.81rem;
+    right:3.75%;
+}
+
+.left-arrow-1 {
+    width: 6.4375rem;
+    height: 2.75rem;
+    border-radius: 1.875rem;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 27.46rem;
+    right:13rem;
+    transition: transform 0.5s ease;
+}
+
+.rar {
+    padding-left: 0.69rem;
+    position: relative;
+    top: -0.25rem;
+    left: 1.5rem;
+    rotate: 90deg;
+}
+
+.lar {
+    padding-left: 3.06rem;
+    position: relative;
+    top: -1.5rem;
+    left: 0.1rem;
+    rotate: 90deg;
+}
+
+.right-arrow-1 {
+    width: 6.4375rem;
+    height: 2.75rem;
+    border-radius: 1.875rem;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 27.46rem;
+    right: 5.5rem;
+    transition: transform 0.5s ease;
+}
+
+.right-arrow:hover {
+    transform: translate(0.5rem)
+}
+
+.left-arrow:hover {
+    transform: translate(-0.5rem);
+}
+
+.page-1 {
+    width:100vw;
+    height:100vh;
+}
+
+.page-2 {
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+    top:0;
+}
+
+.page-3 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.text-background-2 {
+    width: 56.625rem;
+    height: 121.8125rem;
+    flex-shrink: 0;
+
+    position: relative;
+    top:-3rem;
+}
+
+.history {
+    width: 27.4375rem;
+    height: 4.9375rem;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 3.56rem;
+    left: 4rem;
+}
+
+.history-content {
+    width: 33.75rem;
+    height: 31.9375rem;
+    flex-shrink: 0;
+    color: var(--Light_White, #D6D6D6);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 4rem;
+    top: 12rem;
+
+}
+
+.text-background-3 { 
+    width: 56.625rem;
+    height: 121.8125rem;
+    flex-shrink: 0;
+
+    position: absolute;
+    top:11.56rem;
+    right:-15rem;
+}
+
+.left-arrow-2 {
+    width: 6.4375rem;
+    height: 2.75rem;
+    border-radius: 1.875rem;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+
+    position:absolute;
+    top: 27.25rem;
+    right:13rem;
+    transition: transform 0.5s ease;
+}
+
+.right-arrow-2 {
+    width: 6.4375rem;
+    height: 2.75rem;
+    border-radius: 1.875rem;
+    border: 1px solid #FFF;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 27.25rem;
+    right: 5.5rem;
+}
+
+.about-text-2 { 
+    width: 33.75rem;
+    height: 31.9375rem;
+    flex-shrink: 0;
+    color: var(--Light_White, #D6D6D6);
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: absolute;
+    top: 33rem;
+    right: 3.75%;
+}
+
+.project-title { 
+     color: #FFF;
+     font-family: Inter;
+     font-size: 9.375rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     letter-spacing: 0.75rem;
+
+     position: relative;
+     left: 2.37rem;
+}
+
+.project-container p { 
+    width: 35%;
+    height: 43rem;
+    flex-shrink: 0;
+    color: var(--Light_White, #D6D6D6);
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 4rem;
+}
+
+.text-background-4 {
+    position: relative;
+    top: 0;
+    left: -16rem;
+
+}
+
+.project-paragraph-1 {
+    padding-top: 0rem;
+}
+
+.project-paragraph-2 {
+    padding-top: 9rem;
+}
+
+.project-paragraph-3 {
+    padding-top: 20rem;
+}
+
+.wb-image { 
+    width: 55%;
+    flex-shrink: 0;
+
+    position: absolute;
+    right: 1.69rem;
+
+}
+
+.page-4 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: #FFF;
+}
+
+.p4-art {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: 2.5%;
+    aspect-ratio: 3;
+}
+
+.why-choose {
+    width: 50.375rem;
+    height: 5.1875rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    left: 2.5vw;
+    top: -1vh;
+}
+
+.title-light {
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: -5vh;
+}
+
+.why-choose-content-paragraphs {
+    display: inline-flex;
+    margin-left: 2.5vw;
+    max-width: 95%;
+    margin-top: -10%;
+    padding-top: -10vh;
+}
+
+.wcc-group-2 { margin-left: 5vw }
+.wcc-group-3 { margin-left: 5vw }
+
+/*.title-one {
+    position: absolute;
+    left: 3.3%;
+    top: 70%;
+}
+
+.title-two {
+    position: absolute;
+    left: 35%;
+    top:70%;
+}
+
+.title-three {
+    position: absolute;
+    right: 22%;
+    top: 70%;
+}*/
+
+.paragraph-light {
+    width: calc(85vw/3);
+    height: 13.25rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/*.paragraph-one {
+    position: absolute;
+    top: 75%;
+    left: 4rem;
+}
+
+.paragraph-two {
+    position:absolute;
+    top:75%;
+    left: 35%;
+}
+.paragraph-three {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+} */
+
+.page-5 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.background-image-2 { 
+    width:100%;
+    height:100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 0;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+
+/*display: block; !* Treat the image as a block element *!
+margin-left: auto;
+margin-right: auto;
+position: relative; !* Allows for controlled positioning *!
+top: 136px; !* Keeps the image offset from the top *!
+width: 100%; !* Ensures it stretches across the width *!
+height: auto; !* Maintains aspect ratio *!
+max-height: 2100px; !* Optional: Limit height relative to viewport *!
+object-fit: cover; !* Ensures the image fills the container while cropping sides *!
+overflow-x: hidden; !* Hides the edges that exceed the container *!*/
+
+.gb-2 { 
+    position: absolute;
+    top: 75vh;
+}
+
+.get-in-touch-text {
+    color: #FFF;
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: calc(-7vw / 11.4);
+
+    position: absolute;
+    bottom: calc(100vh - 52.8rem + 4rem); /* Adjust as needed to position just above */
+    left: 2.5%;
+    right: 2.5%;
+    width: 95%;
+
+    font-size: calc(95vw / 6.4);
+    max-width: 95vw;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.navbar {
+    transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+/* REGION MENU */
+
+#menuIcon {
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .menu-box {
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 10;
+    border-bottom-left-radius: 1000%;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s;
+  }
+  
+  .menu-box.open-menu {
+    width: 100%;
+    height: 100vh;
+    border-bottom-left-radius: 0;
+  }
+  
+  .menu-box.open-menu ul li {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform .75s, opacity .75s;
+    transition-delay: 0.1s;
+  }
+  
+  .menu-box ul li {
+    list-style: none;
+    margin: 30px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(30px);
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+  }
+  
+  .menu-box ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    text-shadow: 0 0 0 var(--accent);
+    transition: text-shadow 0.5s, transform 0.5s;
+    z-index: 10;
+  }
+  
+  .menu-box ul li a:hover {
+    text-shadow: 4px 4px 0 #FF7CFF;
+    transform: translateY(-5px);
+
+  }
+  /*TODO: Add underline to the text*/
+  .menu-box ul li a:hover::before {
+    width: 10px;
+    height: 10px;
+    color: white;
+  }
+
+.navbar.shown { 
+    opacity: 0;
+    visibility: hidden;
+}
+
+.disabled {
+    color: dimgray;
+}
+
+.disabled::after {
+
+}
+
+nav a:not(.disabled):hover::after {
+    transform: scaleX(1); /* Reveal the underline */
+    transform-origin: left; /* Animate from left to right */
+    opacity: 1; /* Make it visible */
+}
+
+/* Disabled links */
+nav a.disabled {
+    color: gray; /* Grayed-out text */
+    pointer-events: none; /* Disable interaction */
+    position: relative; /* Ensure proper stacking with ::after */
+}
+
+nav a.disabled::after {
+    content: ''; /* Prevent the underline animation from affecting disabled links */
+    opacity: 0; /* Keep the underline invisible for disabled links */
+}
+
+.arr3 {
+    top: 20%;
+}
+
+.arr4 {
+    top: 63%;
+    border-color: black;
+}
+
+
+@media screen and (max-width: 1920px) {
+    /* STD desktop (1080p) */
+}
+
+@media screen and (max-width: 2196px) {
+    /* 2K */
+}
+
+@media screen and (max-width: 4096px) {
+    /* 4K */
+}
+
+@media screen and (max-width: 1700px) {
+    .about-text {
+        top: 25rem;
+    }
+
+    .left-arrow-1, .right-arrow-1 {
+        top: 22rem;
+    }
+}
+
+
+@media screen and (max-width: 1160px) {
+    /* Fix page 2 design to make text stack rather than on
+       Oppisate sides of the screen. */
+
+    .history-content {
+        display: flex;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        left: 0;
+    }
+
+    .about-text-2 {
+        display: flex;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        right: 0;
+        padding-top: 10%;
+    }
+
+    .left-arrow-2 {
+        position: absolute;
+        top: 8.5%;
+    }
+
+    .right-arrow-2 {
+        position: absolute;
+        top: 8.5%;
+    }
+
+    .history {
+        left: 0;
+        padding-left: 10%;
+    }
+
+    .wb-image {
+        left: 10%;
+        right: 10%;
+        width: 70%;
+        top: 15%;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        position: relative;
+        width: 100%;
+        top: 45%;
+        left: 5%;
+        right: 5%;
+        padding-right: 5%;
+    }
+
+    .project-container p {
+        position: relative;
+        left: auto;
+        width: 30%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-paragraph-1,
+    .project-paragraph-2,
+    .project-paragraph-3 {
+        padding-top: 0;
+        position: relative;
+        top: 0;
+        font-size: 1.5rem; /* or use clamp() for responsive size */
+        display: block; /* Ensure they aren't defaulting to full-width flex */
+        margin: 0;
+    }
+
+    .project-title {
+        font-size: 125px;
+    }
+
+    .arr3 {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 960px) {
+    /*
+    Tablet design
+    */
+
+    .icon {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .background {
+        background-color: #080213
+    }
+
+    .l-name {
+        font-size: calc(75vw / 6.4);
+        bottom: 5%;
+    }
+
+    .f-name {
+        font-size: calc(45vw / 6.4);
+        bottom: 22.5%;
+    }
+
+    .about-text-2 {
+        top:+50%;
+    }
+
+    .about-text {
+        top: 10rem;
+    }
+
+    .left-arrow-1, .right-arrow-1 {
+        top: 7rem;
+    }
+
+    .project-title {
+        font-size: 100px;
+        left: 2.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 818px) {
+    .project-title {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 711px) {
+    .about-text-2 {
+    }
+
+    .project-title {
+        font-size: 70px;
+        left: 2.5rem;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+     /*
+    Full mobile design
+    */
+
+    .l-name {
+        width: 92.5%;
+        font-size: 13vw;
+        bottom: 5%;
+    }
+    .f-name {
+        width: 50%;
+        font-size: calc(8vw / 1.1);
+        bottom: 25%
+    }
+
+    .BackgroundArt {
+        width: 150vw;
+    }
+
+    .history {
+        top: 8rem;
+        left: 3.75%;
+    }
+
+    .history-content {
+        display: flex;
+        align-content: center;
+        width: 92.5%;
+        left: 3.75%;
+        right: 3.75%;
+        top: 15rem;
+    }
+
+    .about-text-2 {
+        display: flex;
+        align-content: center;
+        width: 92.5%;
+        left: 3.75%;
+        right: 3.75%;
+        top: 42rem;
+    }
+
+    .left-arrow-2 {
+        top: 11rem;
+    }
+
+    .right-arrow-2 {
+        top: 11rem;
+    }
+
+    .project-title {
+        font-size: 11vw;
+    }
+
+    .wb-image {
+        left: 3.75%;
+        right: 3.75%;
+        display: flex;
+        align-content: center;
+        width: 92.5%;
+        top: 12%;
+
+    }
+
+    .project-container {
+        display: flex;
+        align-content: center;
+        position: absolute;
+        left: 3.75%;
+        right: 3.75%;
+        width: 92.5%;
+        top: 40%;
+    }
+
+    .project-container p {
+        width: 92.5%;
+        left: 0;
+        display: flex;
+        font-size: 6vw;
+    }
+
+    .arr3 {
+        top: 7%;
+    }
+
+    .arr4 {
+        top: 26.5%;
+    }
+
+    .get-in-touch-text {
+        top: 67%;
+    }
+
+    .background-image-2 {
+        position: absolute;
+        height: 120vh;
+        bottom: 0;
+        top: 0;
+    }
+}
+@media  screen and (max-width: 960px) {
+
+}
